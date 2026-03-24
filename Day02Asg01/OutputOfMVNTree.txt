@@ -1,0 +1,58 @@
+[INFO] com.cdac:springbootstructure:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:4.0.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:4.0.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:4.0.4:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.5.32:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.5.32:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.25.3:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.25.3:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.17:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:4.0.4:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:2.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-micrometer-metrics:jar:4.0.4:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-micrometer-metrics:jar:4.0.4:compile
+[INFO] |  |     \- org.springframework.boot:spring-boot-micrometer-observation:jar:4.0.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:4.0.4:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:4.0.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-health:jar:4.0.4:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot:jar:4.0.4:compile
+[INFO] |  |     \- org.springframework:spring-context:jar:7.0.6:compile
+[INFO] |  +- io.micrometer:micrometer-observation:jar:1.16.4:compile
+[INFO] |  |  +- org.jspecify:jspecify:jar:1.0.0:compile
+[INFO] |  |  \- io.micrometer:micrometer-commons:jar:1.16.4:compile
+[INFO] |  \- io.micrometer:micrometer-jakarta9:jar:1.16.4:compile
+[INFO] |     \- io.micrometer:micrometer-core:jar:1.16.4:compile
+[INFO] |        +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |        \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] +- org.springframework.boot:spring-boot-starter-validation:jar:4.0.4:compile
+[INFO] |  \- org.springframework.boot:spring-boot-validation:jar:4.0.4:compile
+[INFO] |     +- org.apache.tomcat.embed:tomcat-embed-el:jar:11.0.18:compile
+[INFO] |     \- org.hibernate.validator:hibernate-validator:jar:9.0.1.Final:compile
+[INFO] |        +- jakarta.validation:jakarta.validation-api:jar:3.1.1:compile
+[INFO] |        +- org.jboss.logging:jboss-logging:jar:3.6.3.Final:compile
+[INFO] |        \- com.fasterxml:classmate:jar:1.7.3:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-webmvc:jar:4.0.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jackson:jar:4.0.4:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-jackson:jar:4.0.4:compile
+[INFO] |  |     \- tools.jackson.core:jackson-databind:jar:3.1.0:compile
+[INFO] |  |        +- com.fasterxml.jackson.core:jackson-annotations:jar:2.21:compile
+[INFO] |  |        \- tools.jackson.core:jackson-core:jar:3.1.0:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:4.0.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-tomcat-runtime:jar:4.0.4:compile
+[INFO] |  |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:11.0.18:compile
+[INFO] |  |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:11.0.18:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-tomcat:jar:4.0.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-http-converter:jar:4.0.4:compile
+[INFO] |  |  \- org.springframework:spring-web:jar:7.0.6:compile
+[INFO] |  |     \- org.springframework:spring-beans:jar:7.0.6:compile
+[INFO] |  \- org.springframework.boot:spring-boot-webmvc:jar:4.0.4:compile
+[INFO] |     +- org.springframework.boot:spring-boot-servlet:jar:4.0.4:compile
+[INFO] |     \- org.springframework:spring-webmvc:jar:7.0.6:compile
+[INFO] |        +- org.springframework:spring-aop:jar:7.0.6:compile
+[INFO] |        \- org.springframework:spring-expression:jar:7.0.6:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator-test:jar:4.0.4:test
+[INFO] |  +- org.springframework.boot:spring-boot-starter-test:jar:4.0.4:test
+[INFO] |  |  +- org.springframework.boot:spring-boot-test:jar:4.0.4:test
+[INFO] |  |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:4.0.4:test
+[INFO] |  |  +- com.jayway.jsonpath:json-path:jar:2.10.0:tes
