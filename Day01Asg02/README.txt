@@ -9,4 +9,4 @@ Steps to Run:
    http://localhost:8081/status
 
 Java Version: 21
-IDE: Eclipse / IntelliJ
+IDE: Eclipse 
