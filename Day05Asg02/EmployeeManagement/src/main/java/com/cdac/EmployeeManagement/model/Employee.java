@@ -1,11 +1,21 @@
 package com.cdac.EmployeeManagement.model;
 
+
+import jakarta.validation.constraints.*;
 public class Employee {
 
     private int id;
+    
+    @NotBlank(message = "Name cannot be empty")
     private String name;
+    
+    @NotBlank(message = "Name cannot be empty")
     private String department;
+    
+    @Email(message = "Invalid email format")
     private String email;
+    
+    @Min(value=25000, message="Salary must be greater than 25000")
     private double salary;
 
     public Employee() {}
