@@ -4,8 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.mb.employeemanagement.entity.Leave;
-import com.mb.employeemanagement.enums.LeaveStatus;
-import com.mb.employeemanagement.enums.LeaveType;
 
 import java.util.List;
 
@@ -16,7 +14,7 @@ import java.util.Optional;
 public interface LeaveRepository extends JpaRepository<Leave, Integer> {
 
     @EntityGraph(attributePaths = {"employee", "approvedBy"})
-    List<Leave> findByEmployeeId(int employeeId);
+    List<Leave> findByEmployeeId(Integer employeeId);
     
     @EntityGraph(attributePaths = {"employee", "approvedBy"})
     List<Leave> findAll();

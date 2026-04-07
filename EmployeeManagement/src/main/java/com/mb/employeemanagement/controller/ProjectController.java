@@ -32,7 +32,8 @@ public class ProjectController {
 	//getall
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<ProjectResponse>>> getAll() {
-		return ResponseEntity.ok(new ApiResponse<>("All projects", service.findAll()));
+		List<ProjectResponse> projectResponses = service.findAll();
+		return ResponseEntity.ok(new ApiResponse<>("All projects", projectResponses));
 	}
 	//get by id
 

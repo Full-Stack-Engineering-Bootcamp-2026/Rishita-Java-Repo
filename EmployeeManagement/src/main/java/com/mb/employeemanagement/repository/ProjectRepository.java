@@ -1,8 +1,7 @@
 package com.mb.employeemanagement.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
+
 import org.springframework.stereotype.Repository;
 
 import com.mb.employeemanagement.entity.Project;
@@ -18,8 +17,7 @@ public interface ProjectRepository extends JpaRepository<Project, Integer> {
 	boolean existsByName(String name);
 
 	@EntityGraph(attributePaths = {"employeeProjects"})
-	@Query("SELECT p FROM Project p JOIN p.employeeProjects ep WHERE ep.employee.id = :employeeId")
-	List<Project> findByEmployeeId(@Param("employeeId") int employeeId);
+	List<Project> findByEmployeeProjects_Employee_Id(Integer employeeId);
 
     @EntityGraph(attributePaths = {"employeeProjects"})
     List<Project> findAll();

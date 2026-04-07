@@ -15,10 +15,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ApiResponse<T> {
 
+	private String errorCode;
 	private String message;
 	private T data;
 
 	public ApiResponse(String message, T data) {
+		this.message = message;
+		this.data = data;
+	}
+
+	public ApiResponse(String errorCode, String message, T data) {
+		this.errorCode = errorCode;
 		this.message = message;
 		this.data = data;
 	}

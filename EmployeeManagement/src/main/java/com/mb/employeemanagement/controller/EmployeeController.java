@@ -32,7 +32,8 @@ public class EmployeeController {
 
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<EmployeeResponse>>> getAll() {
-		return ResponseEntity.ok(new ApiResponse<>("all employees", service.findAll()));
+		List<EmployeeResponse> employeeResponses = service.findAll();
+		return ResponseEntity.ok(new ApiResponse<>("all employees", employeeResponses));
 	}
 	
 	//get by id

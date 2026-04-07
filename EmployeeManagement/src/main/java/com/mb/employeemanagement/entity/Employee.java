@@ -37,7 +37,7 @@ public class Employee {
  
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
  
 
     @Column(nullable = false)
@@ -49,7 +49,7 @@ public class Employee {
  
 
     @Column(nullable = false)
-    private double salary;
+    private Double salary;
  
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")

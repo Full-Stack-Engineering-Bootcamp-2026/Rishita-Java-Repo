@@ -42,7 +42,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
  //byempid
     public List<ProjectResponse> findByEmployeeId(int employeeId) {
-        return projectRepo.findByEmployeeId(employeeId).stream()
+        return projectRepo.findByEmployeeProjects_Employee_Id(employeeId).stream()
                 .map(p -> modelMapper.map(p, ProjectResponse.class))
                 .collect(Collectors.toList());
     }
